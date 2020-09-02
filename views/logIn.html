@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>Momi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="views/styles.css">
+  <link rel="stylesheet" href="views/signUpLogIn.css">
+  <script src="../scripts/jquery.js"></script>
+
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+  <header>
+    <div class ="container"> 
+      <div class ="row ">
+          <div class ="col">
+              <button id="closeExt" type="button" class=" btn btn-danger" style ="float:left;">
+                <i class ="fa fa-close"></i>
+              </button>
+          </div>
+            <img style ="text-align: center;"src="../images/MomyLetter.png" alt="Momy" height="50" width="200">
+          <div class ="col">
+              <button id="settingsPage" style ="float:right;">
+                  <i class ="fa fa-cogs"></i>
+              </button>
+          </div>    
+        </div>
+    </div>
+    <hr>
+  </header>
+
+
+    <div class="containerLogInForm">
+        <form action="">
+            <h2 style="text-align:center">Accede a tu cuenta</h2>
+            <div class="row">
+                <div class="col">
+                  <a href="../views/logInFacebook.html" style="color:black" class="btn">Facebook</a>
+                </div>
+                <div class="col">
+                  <div class="g-signin2" data-onsuccess="onSignIn">
+                    Google
+                  </div>
+                </div>
+            </div>
+
+            
+            <div class="col">
+            <div class="hide-md-lg">
+                <p>O hazlo manualmente:</p>
+            </div>
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar Sesión">
+            </div>
+        </form>
+    </div>
+
+  <div class="bottom-container">
+    <div class="row">
+      <div class="col">
+        <a href="../views/register.html" style="color:white" class="btn">Regístrate</a>
+      </div>
+      <div class="col">
+        <a href="#" style="color:white" class="btn">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <footer>
+    <div class="page-content page-container" id="page-content" >
+        <div class="row container">
+            <p class=""><small>¿Quiéres más Momi?</small></p>
+            <div class=""> 
+                <button id="facebook" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-facebook" width="95">
+                    <i class="fa fa-facebook"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="youtube" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-youtube" width="95">
+                    <i class="fa fa-youtube"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="twitter" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-twitter" width="95">
+                    <i class="fa fa-twitter"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="instagram" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-instagram" width="95">
+                    <i class="fa fa-instagram"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="copyrightOutput" style="text-align: right;"></div>
+  </footer>
+  <script src="../scripts/popup.js"></script>
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/footer.js"></script>
+  <script src="../bootstrap/js/jquery.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../scripts/logIn.js"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=751152982359821&autoLogAppEvents=1" nonce="Q7eZSULv"></script>
+
+</body>
+</html>
+
+
+

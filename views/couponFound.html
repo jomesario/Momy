@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>Momi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="views/styles.css">
+</head>
+<body>
+  <header>
+    <div class ="container"> 
+      <div class ="row ">
+          <div class ="col">
+              <button id="closeExt" type="button" class=" btn btn-danger" style ="float:left;">
+                <i class ="fa fa-close"></i>
+              </button>
+          </div>
+            <img style ="text-align: center;"src="../images/MomyLetter.png" alt="Momy" height="50" width="200">
+          <div class ="col">
+              <button id="settingsPage" style ="float:right;">
+                  <i class ="fa fa-cogs"></i>
+              </button>
+          </div>    
+        </div>
+    </div>
+    <hr>
+  </header>
+
+
+    <h1 style ="text-align: center;">¡Cupón encontrado!</h1>
+    <h3 style ="text-align: center;">20% - MXN$300.00</h3>
+    <h5>¡Felicidades, ya ahorraste!</h5>
+    <h6>Al utilizar este cupón ganaras 8 Mominedas</h6>
+    <input type="text" value="CuponPerron100" id="copiedCoupon">
+    <button id="copyToClipboardBtn">Copiar</button>
+
+  <footer>
+    <hr>
+    <div class="page-content page-container" id="page-content" >
+        <div class="row container">
+            <p class="">¿Quiéres más Momi?</p>
+            <div class=""> 
+                <button id="facebook" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-facebook" width="95">
+                    <i class="fa fa-facebook"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="youtube" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-youtube" width="95">
+                    <i class="fa fa-youtube"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="twitter" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-twitter" width="95">
+                    <i class="fa fa-twitter"></i>
+                </button>
+            </div>
+            <div class="">
+                <button id="instagram" type="button" class="col-sm-3 col-md-3 btn btn-social-icon btn-outline-instagram" width="95">
+                    <i class="fa fa-instagram"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="copyrightOutput" style="text-align: right;"></div>
+  </footer>
+  <script src="../scripts/couponFound.js"></script>
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/footer.js"></script>
+  <script src="../bootstrap/js/jquery.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
